@@ -1,4 +1,14 @@
-run = "purs"
+run = """
+purs
+spago build
+npm run start
+"""
+
+[packager]
+language = "nodejs"
+
+  [packager.features]
+  packageSearch = true
 
 [nix]
 channel = "stable-21_11"

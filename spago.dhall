@@ -14,6 +14,8 @@ to generate this file without the comments in this block.
 , dependencies =
   [ "console"
   , "effect"
+  , "elmish"
+  , "elmish-html"
   , "foldable-traversable"
   , "lists"
   , "prelude"

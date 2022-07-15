@@ -1,10 +1,10 @@
 module Main where
 
-import Prelude
+import Prelude (Unit)
+import HelloWorld(init, update, view)
 
 import Effect (Effect)
-import Effect.Console (log)
+import Elmish.Boot (defaultMain) -- We'll need this in a moment
 
 main :: Effect Unit
-main = do
-  log "🍝"
+main = defaultMain { def: { init, view, update }, elementId: "app" }
