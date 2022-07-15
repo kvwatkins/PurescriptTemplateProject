@@ -1,0 +1,4 @@
+run = "purs"
+
+[nix]
+channel = "stable-21_11"
